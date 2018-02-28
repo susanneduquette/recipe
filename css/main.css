@@ -1,3 +1,232 @@
 /* flexible image */
 
-img 
+body {
+  background-color: #FAF0E6;
+  width: 90%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- links --- */
+
+a {
+  color: #CD853F;
+  font-family: "Trebuchet MS", sans-serif;
+  /* text-align: center; */
+}
+
+/*interactive pseudo-classes */
+
+a:hover,
+a:focus {
+  color: #A0522D;
+}
+
+/* .back-to-top a {
+  color: #A0522D;
+}*/
+
+header figure {
+  text-align: center;
+}
+
+
+header img {
+  border-width: .5em;
+  border-style: solid;
+  border-color: #FFFAF0;
+  margin: 0 -.5em;
+  }
+
+/* figure {
+  font-family: "Verdana" sans-serif;
+  }
+*/
+
+  header figcaption {
+    text-align: center;
+    padding-top: .5em;
+    padding-left: o;
+    font-family:"Trebuchet MS", sans-serif;
+    color: #CD853F;
+  }
+
+nav {
+  margin-top: 1em;
+}
+
+/* nav h2 {
+  margin: 0;
+} */
+
+nav ul {
+    list-style: none;
+    padding-top: .5em;
+    padding-left: 0;
+    margin: 0;
+  }
+
+nav li {
+  display: inline;
+  /* margin: 0 -.1em; */
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  background: #FFF8DC;
+  padding: 1em;
+  border-top: .2em solid #FFFAF0;
+  border-bottom: .2em solid #FFFAF0;
+  /*border-radius: .5em; ----- rounded corners -----  */
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #F0E68C;
+}
+
+.amp {
+  font-family: cursive;
+}
+
+  h1 {
+    background: #F5F5F5;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .1em;
+    padding-right: .1em;
+    border-top: .2em solid #FFFAF0;
+    border-bottom: .2em solid #FFFAF0;
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    text-align: center;
+    color: #A0522D;
+  }
+
+  h2 {
+    display: inline-block;
+    background: #F5F5F5;
+    padding-top: .1em;
+    padding-right: .75em;
+    padding-bottom: .1em;
+    padding-left: .75em;
+
+    /* padding-bottom: .3em; */
+    border-top: .2em solid #FFFAF0;
+    border-bottom: .2em solid #FFFAF0;
+    /* margin-right: 44em; */
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+    text-align: center;
+    color: #A0522D;
+  }
+
+  h3 {
+    display: inline-block;
+    background: #FFEFD5;
+    padding-top: .1em;
+    padding-right: .75em;
+    padding-bottom: .1em;
+    padding-left: .75em;
+    border-top: .4em solid #FFF8DC;
+    border-bottom: .4em solid #FFF8DC;
+    /* border-color: #FFFAF0; */
+    margin-left: 1em;
+    /* margin-right: 4em; */
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    line-height:1.5;
+    letter-spacing: .09em;
+    text-align: center;
+    color: #A0522D;
+
+  }
+
+  p {
+    padding-left: 2em;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.0em;
+    line-height: 1.5;
+    color: #8B4513;
+  }
+
+
+  /* .back-to-top {
+    clear: both;
+  } */
+
+  #ingredients ul {
+    /* background-color: #FFFAFA */
+    background-color: #FFFAF0;
+    list-style: disk;
+    padding-top:.5em;
+    padding-left: 1.5em;
+    padding-bottom: 1.25em;
+    margin-right: 2em;
+    border-radius: .5em;
+  }
+
+  #ingredients li {
+    color: #FFFACD;
+    line-height: 1.5;
+    padding-left: .1em;
+    margin-top: .5em;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+
+#ingredients li span{
+    color: #8B4513;
+  }
+
+#directions ul{
+  background-color: #FFFAF0;
+  list-style: none;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  padding-left: 0;
+  margin-left: 0;
+  border-radius: .75em;
+  }
+
+/* --- layout for wider width screens --- */
+
+
+@media (min-width: 40em) {
+
+  header img {
+    max-width: 30em;
+  }
+
+}
+
+/*breakpoint */
+
+  @media (min-width: 60em) {
+    main {
+      /* background-color: #FFFAFA */
+      /* border: 1px dashed #fff; */
+      overflow: hidden;
+      /* ----- layout hack ----- */
+    }
+
+      #ingredients,
+      #directions {
+        float: left;
+        width: 50%;
+      }
+  }
